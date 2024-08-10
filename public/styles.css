@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #201e1e;
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(229, 228, 228, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
+button.delete {
+    background-color: #dc3545;
+}
+
+button.edit {
+    background-color: #ffc107;
+}
+
+button.complete {
+    background-color: #007bff;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+button.complete:hover {
+    background-color: #0069d9;
+}
